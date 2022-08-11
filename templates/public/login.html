@@ -1,0 +1,25 @@
+{% extends 'public/layout.html' %}
+
+{% block content %}
+    <h1 style="color: blue;">Login</h1>
+    <form action="{{login_uri | safe}}" method="post">
+    <table>
+      <tr>
+          <td>Username:</td>
+          <td><INPUT TYPE="text" NAME="username" ID="username"></td>
+      </tr>
+      <tr>
+          <td>Password:</td>
+          <td><INPUT TYPE="password" NAME="password" ID="password"></td>
+      </tr>
+      <tr>
+          <td>&nbsp;</td>
+        <td>
+          <div>
+            <button type="submit" id="login_button">Login</button>
+          </div>
+	    </td>
+      </tr>
+    </table>
+    </form>
+{% endblock %}
